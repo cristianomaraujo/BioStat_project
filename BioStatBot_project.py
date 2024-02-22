@@ -52,7 +52,7 @@ if idioma == "English":
         text-align: center;
     }
     </style>
-    <div class="footer">Pilot project developed by the University Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
+    <div class="footer">Project developed by the University Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
     Developed by: Amanda Cristina Agador and Cristiano Miranda de Araujo<br>
     Contact: cristiano.araujo@utp.br<br>
     Project supported by the Coordination for the Improvement of Higher Education Personnel (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
@@ -92,7 +92,7 @@ elif idioma == "Português":
         text-align: center;
     }
     </style>
-    <div class="footer">Projeto piloto desenvolvido pela Universidade Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
+    <div class="footer">Projeto desenvolvido pela Universidade Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
     Desenvolvido por: Amanda Cristina Agador e Cristiano Miranda de Araujo<br>
     Contato: cristiano.araujo@utp.br<br>
     Projeto apoiado pela Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
@@ -131,7 +131,7 @@ else:
         text-align: center;
     }
     </style>
-    <div class="footer">Proyecto piloto desarrollado por la Universidad Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
+    <div class="footer">Proyecto desarrollado por la Universidad Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
     Desarrollado por: Amanda Cristina Agador y Cristiano Miranda de Araujo<br>
     Contacto: cristiano.araujo@utp.br<br>
     Proyecto apoyado por la Coordinación de Perfeccionamiento del Personal de Nivel Superior (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
