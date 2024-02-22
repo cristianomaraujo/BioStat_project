@@ -24,12 +24,9 @@ idioma = st.sidebar.radio("Idioma/Language:", ("English", "Português", "Españo
 # Defina os textos e botões com base no idioma selecionado
 if idioma == "English":
     st.image(logo_url, use_column_width=True)
-    abertura = st.write("Hello! I'm an AI-powered chatbot ready to assist you with Biostatistics. To start our conversation, please enter some information in the sidebar or in the field below, or simply type 'Hi'.")
+    abertura = st.write("Hello there! I'm an AI-powered chatbot here to assist you with Biostatistics. To kick off our conversation, please enter any biostatistics-related information in the sidebar or the field below.")
     st.sidebar.title("Tell me")
-    pergunta = st.sidebar.text_input("Chat with me by typing in the field below:")
-    botao = st.sidebar.button("Send")
-    text_input_center = st.text_input("Chat with me by typing in the field below")
-    button_center = st.button("Send message")
+    text_input_center = st.chat_input("Chat with me by typing in the field below")
     condicoes = ("Answer only questions related to biostatistics and statistical tests applied in health studies."
     "Ensure all questions fall within the chatbot's scope and provide guidance otherwise."
     "Ensure responses are pertinent to the user's question context and offer relevant information about statistical tests in health."
@@ -45,29 +42,23 @@ if idioma == "English":
     "Limit the response to a maximum of 3800 output tokens.")
 
     st.sidebar.markdown(
-    """
-    <style>
-    .footer {
-        font-size: 9px;
-        text-align: center;
-    }
-    </style>
-    <div class="footer">Project developed by the University Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
-    Developed by: Amanda Cristina Agador and Cristiano Miranda de Araujo<br>
-    Contact: cristiano.araujo@utp.br<br>
-    Project supported by the Coordination for the Improvement of Higher Education Personnel (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
-    """,
-    unsafe_allow_html=True
+        """
+        <style>
+        .footer {
+            font-size: 9px;
+            text-align: center;
+        }
+        </style>
+        <div class="footer">Pilot project developed by the University Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br><br><br><br><br><br><br><br><br><br></div>
+        """,
+        unsafe_allow_html=True
     )
 
 elif idioma == "Português":
     st.image(logo_url_p, use_column_width=True)
-    abertura = st.write("Olá! Sou um chatbot com inteligência artificial pronto para ajudá-lo com Biostatística. Para iniciar nossa conversa, por favor, insira algumas informações na barra lateral ou no campo abaixo, ou simplesmente escreva 'Oi'.")
+    abertura = st.write("Olá! Sou um chatbot com inteligência artificial pronto para ajudá-lo com Biostatística. Para iniciar nossa conversa, por favor, insira algumas informações na barra lateral ou no campo abaixo.")
     st.sidebar.title("Conte-me")
-    pergunta = st.sidebar.text_input("Converse comigo, digitando no campo abaixo:")
-    botao = st.sidebar.button("Enviar")
-    text_input_center = st.text_input("Converse comigo, digitando no campo abaixo")
-    button_center = st.button("Enviar mensagem")
+    text_input_center = st.chat_input("Converse comigo")
     condicoes =  ("Responda apenas perguntas relacionadas à bioestatística e testes estatísticos aplicados em estudos de saúde."
     "Certifique-se de que todas as perguntas estejam dentro do escopo do chatbot e forneça orientações caso contrário."
     "Garanta que as respostas sejam pertinentes ao contexto da pergunta do usuário e ofereçam informações relevantes sobre testes estatísticos em saúde."
@@ -85,31 +76,24 @@ elif idioma == "Português":
     ##condicoes = f"Siga essas regras durante toda nossa conversa: 1) Este chatbot está programado para responder apenas perguntas relacionadas a BIOESTATÍSTICA; 2) Aja como um chatbot, fazendo perguntas para dar a melhor orientação. 3) Se a pergunta não for relacionada com bioestatística, peça desculpas e explique que você está programado apenas para conversar sobre questões estatísticas; 4) Pergunte o nome do usuário e o chame pelo nome;  5) Utilize os termos, linguagem e exemplos apropriados para área de saúde;  6) Seu nome é Inferentia. Se apresente ao iniciar a conversa; 7) Inicie a conversa após saber o nome do usuário, se o usuário não te informar uma resposta para o tamanho da amostra planejada, a quantidade de grupos, a variável (se categórica ou numérica) que pretende utilizar para a comparação estatística, e a principal dúvida, por favor solicite a informação. 8) É aceitável o usuário não saber ainda o tamanho da amostra. Contudo, as outras informações são essenciais."
 
     st.sidebar.markdown(
-    """
-    <style>
-    .footer {
-        font-size: 9px;
-        text-align: center;
-    }
-    </style>
-    <div class="footer">Projeto desenvolvido pela Universidade Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
-    Desenvolvido por: Amanda Cristina Agador e Cristiano Miranda de Araujo<br>
-    Contato: cristiano.araujo@utp.br<br>
-    Projeto apoiado pela Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
-    """,
-    unsafe_allow_html=True
+        """
+        <style>
+        .footer {
+            font-size: 9px;
+            text-align: center;
+        }
+        </style>
+        <div class="footer">Projeto piloto desenvolvido pela Universidade Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br><br><br><br><br><br><br><br><br><br></div>
+        """,
+        unsafe_allow_html=True
     )
-
 
 else:
     st.image(logo_url_e, use_column_width=True)
-    abertura = st.write("¡Hola! Soy un chatbot con inteligencia artificial listo para ayudarte con Biostadística. Para comenzar nuestra conversación, por favor, ingresa alguna información en la barra lateral o en el campo a continuación, o simplemente escribe 'Hola'.")
+    abertura = st.write("¡Bienvenido! Soy un chatbot basado en inteligencia artificial, aquí para ayudarte con el trauma dental. Para comenzar nuestra conversación, por favor ingresa información relacionada con el trauma dental en la barra lateral o en el campo de abajo.")
     st.sidebar.title("Cuéntame")
-    pergunta = st.sidebar.text_input("Charla conmigo escribiendo en el campo de abajo:")
-    botao = st.sidebar.button("Enviar")
-    text_input_center = st.text_input("Charla conmigo escribiendo en el campo de abajo")
-    button_center = st.button("Enviar mensaje")
-    condicoes = ("Responde solo preguntas relacionadas con bioestadística y pruebas estadísticas aplicadas en estudios de salud."
+    text_input_center = st.chat_input("Charla conmigo")
+        condicoes = ("Responde solo preguntas relacionadas con bioestadística y pruebas estadísticas aplicadas en estudios de salud."
     "Asegúrate de que todas las preguntas estén dentro del alcance del chatbot y proporciona orientación en caso contrario."
     "Asegúrate de que las respuestas sean pertinentes al contexto de la pregunta del usuario y ofrece información relevante sobre las pruebas estadísticas en salud."
     "Utiliza técnicas de procesamiento de lenguaje natural (NLP) para comprender la intención detrás de las preguntas de los usuarios y responde en consecuencia."
@@ -124,21 +108,17 @@ else:
     "Limite la respuesta a un máximo de 3800 tokens de salida.")
 
     st.sidebar.markdown(
-    """
-    <style>
-    .footer {
-        font-size: 9px;
-        text-align: center;
-    }
-    </style>
-    <div class="footer">Proyecto desarrollado por la Universidad Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
-    Desarrollado por: Amanda Cristina Agador y Cristiano Miranda de Araujo<br>
-    Contacto: cristiano.araujo@utp.br<br>
-    Proyecto apoyado por la Coordinación de Perfeccionamiento del Personal de Nivel Superior (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
-    """,
-    unsafe_allow_html=True
+        """
+        <style>
+        .footer {
+            font-size: 9px;
+            text-align: center;
+        }
+        </style>
+        <div class="footer">Proyecto piloto desarrollado por la Universidad Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br><br><br><br><br><br><br><br><br><br></div>
+        """,
+        unsafe_allow_html=True
     )
-
 
 # Criação da função para renderizar a conversa com barra de rolagem
 def render_chat(hst_conversa):
@@ -165,17 +145,7 @@ st.write("***")
 if 'hst_conversa' not in st.session_state:
     st.session_state.hst_conversa = [{"role": "user", "content": condicoes}]
 
-if botao:
-    st.session_state.hst_conversa.append({"role": "user", "content": pergunta})
-    retorno_openai = openai.ChatCompletion.create(
-        model="gpt-4-0125-preview",
-        messages=st.session_state.hst_conversa,
-        max_tokens=500,
-        n=1
-    )
-    st.session_state.hst_conversa.append({"role": "assistant", "content": retorno_openai['choices'][0]['message']['content']})
-
-if button_center:
+if text_input_center:
     st.session_state.hst_conversa.append({"role": "user", "content": text_input_center})
     retorno_openai = openai.ChatCompletion.create(
         model="gpt-4-0125-preview",
@@ -185,7 +155,8 @@ if button_center:
     )
     st.session_state.hst_conversa.append({"role": "assistant", "content": retorno_openai['choices'][0]['message']['content']})
 
+
+
 ######RENDERIZAÇÃO DA CONVERSA
 if len(st.session_state.hst_conversa) > 1:
     render_chat(st.session_state.hst_conversa)
-
