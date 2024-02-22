@@ -24,7 +24,7 @@ idioma = st.sidebar.radio("Idioma/Language:", ("English", "Português", "Españo
 # Defina os textos e botões com base no idioma selecionado
 if idioma == "English":
     st.image(logo_url, use_column_width=True)
-    abertura = st.write("Hello there! I'm an AI-powered chatbot here to assist you with Biostatistics. To kick off our conversation, please enter any biostatistics-related information in the sidebar or the field below.")
+    abertura = st.write("Hello! I'm an AI-powered chatbot ready to assist you with Biostatistics. To start our conversation, please enter some information in the sidebar or in the field below, or simply type 'Hi'.")
     st.sidebar.title("Tell me")
     pergunta = st.sidebar.text_input("Chat with me by typing in the field below:")
     botao = st.sidebar.button("Send")
@@ -59,7 +59,7 @@ if idioma == "English":
 
 elif idioma == "Português":
     st.image(logo_url_p, use_column_width=True)
-    abertura = st.write("Olá! Sou um chatbot com inteligência artificial pronto para ajudá-lo com Biostatística. Para iniciar nossa conversa, por favor, insira algumas informações na barra lateral ou no campo abaixo.")
+    abertura = st.write("Olá! Sou um chatbot com inteligência artificial pronto para ajudá-lo com Biostatística. Para iniciar nossa conversa, por favor, insira algumas informações na barra lateral ou no campo abaixo, ou simplesmente escreva 'Oi'.")
     st.sidebar.title("Conte-me")
     pergunta = st.sidebar.text_input("Converse comigo, digitando no campo abaixo:")
     botao = st.sidebar.button("Enviar")
@@ -96,7 +96,7 @@ elif idioma == "Português":
 
 else:
     st.image(logo_url_e, use_column_width=True)
-    abertura = st.write("¡Bienvenido! Soy un chatbot basado en inteligencia artificial, aquí para ayudarte con el trauma dental. Para comenzar nuestra conversación, por favor ingresa información relacionada con el trauma dental en la barra lateral o en el campo de abajo.")
+    abertura = st.write("¡Hola! Soy un chatbot con inteligencia artificial listo para ayudarte con Biostadística. Para comenzar nuestra conversación, por favor, ingresa alguna información en la barra lateral o en el campo a continuación, o simplemente escribe 'Hola'.")
     st.sidebar.title("Cuéntame")
     pergunta = st.sidebar.text_input("Charla conmigo escribiendo en el campo de abajo:")
     botao = st.sidebar.button("Enviar")
