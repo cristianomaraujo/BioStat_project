@@ -93,7 +93,7 @@ else:
     abertura = st.write("¡Bienvenido! Soy un chatbot basado en inteligencia artificial, aquí para ayudarte con el trauma dental. Para comenzar nuestra conversación, por favor ingresa información relacionada con el trauma dental en la barra lateral o en el campo de abajo.")
     st.sidebar.title("Cuéntame")
     text_input_center = st.chat_input("Charla conmigo")
-        condicoes = ("Responde solo preguntas relacionadas con bioestadística y pruebas estadísticas aplicadas en estudios de salud."
+    condicoes = ("Responde solo preguntas relacionadas con bioestadística y pruebas estadísticas aplicadas en estudios de salud."
     "Asegúrate de que todas las preguntas estén dentro del alcance del chatbot y proporciona orientación en caso contrario."
     "Asegúrate de que las respuestas sean pertinentes al contexto de la pregunta del usuario y ofrece información relevante sobre las pruebas estadísticas en salud."
     "Utiliza técnicas de procesamiento de lenguaje natural (NLP) para comprender la intención detrás de las preguntas de los usuarios y responde en consecuencia."
