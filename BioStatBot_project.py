@@ -25,7 +25,6 @@ idioma = st.sidebar.radio("Idioma/Language:", ("English", "Português", "Españo
 if idioma == "English":
     st.image(logo_url, use_column_width=True)
     abertura = st.write("Hello! I'm an AI-powered chatbot ready to assist you with Biostatistics. To start our conversation, please enter some information in the field below, or simply type 'Hi'.")
-    st.sidebar.title("Tell me")
     text_input_center = st.chat_input("Chat with me")
     condicoes = ("Answer only questions related to biostatistics and statistical tests applied in health studies."
     "Ensure all questions fall within the chatbot's scope and provide guidance otherwise."
@@ -60,7 +59,6 @@ if idioma == "English":
 elif idioma == "Português":
     st.image(logo_url_p, use_column_width=True)
     abertura = st.write("Olá! Sou um chatbot com inteligência artificial pronto para ajudá-lo com Biostatística. Para iniciar nossa conversa, por favor, insira alguma informação no campo abaixo, ou simplesmente escreva 'Oi'.")
-    st.sidebar.title("Conte-me")
     text_input_center = st.chat_input("Converse comigo")
     condicoes =  ("Responda apenas perguntas relacionadas à bioestatística e testes estatísticos aplicados em estudos de saúde."
     "Certifique-se de que todas as perguntas estejam dentro do escopo do chatbot e forneça orientações caso contrário."
@@ -97,7 +95,6 @@ elif idioma == "Português":
 else:
     st.image(logo_url_e, use_column_width=True)
     abertura = st.write("¡Hola! Soy un chatbot con inteligencia artificial listo para ayudarte con Biostadística. Para comenzar nuestra conversación, por favor, ingresa alguna información en el campo a continuación, o simplemente escribe 'Hola'.")
-    st.sidebar.title("Cuéntame")
     text_input_center = st.chat_input("Charla conmigo")
     condicoes = ("Responde solo preguntas relacionadas con bioestadística y pruebas estadísticas aplicadas en estudios de salud."
     "Asegúrate de que todas las preguntas estén dentro del alcance del chatbot y proporciona orientación en caso contrario."
