@@ -45,16 +45,19 @@ if idioma == "English":
     "Limit the response to a maximum of 3800 output tokens.")
 
     st.sidebar.markdown(
-        """
-        <style>
-        .footer {
-            font-size: 9px;
-            text-align: center;
-        }
-        </style>
-        <div class="footer">Pilot project developed by the University Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br><br><br><br><br><br><br><br><br><br></div>
-        """,
-        unsafe_allow_html=True
+    """
+    <style>
+    .footer {
+        font-size: 9px;
+        text-align: center;
+    }
+    </style>
+    <div class="footer">Pilot project developed by the University Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
+    Developed by: Amanda Cristina Agador and Cristiano Miranda de Araujo<br>
+    Contact: cristiano.araujo@utp.br<br>
+    Project supported by the Coordination for the Improvement of Higher Education Personnel (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
+    """,
+    unsafe_allow_html=True
     )
 
 elif idioma == "Português":
@@ -82,17 +85,21 @@ elif idioma == "Português":
     ##condicoes = f"Siga essas regras durante toda nossa conversa: 1) Este chatbot está programado para responder apenas perguntas relacionadas a BIOESTATÍSTICA; 2) Aja como um chatbot, fazendo perguntas para dar a melhor orientação. 3) Se a pergunta não for relacionada com bioestatística, peça desculpas e explique que você está programado apenas para conversar sobre questões estatísticas; 4) Pergunte o nome do usuário e o chame pelo nome;  5) Utilize os termos, linguagem e exemplos apropriados para área de saúde;  6) Seu nome é Inferentia. Se apresente ao iniciar a conversa; 7) Inicie a conversa após saber o nome do usuário, se o usuário não te informar uma resposta para o tamanho da amostra planejada, a quantidade de grupos, a variável (se categórica ou numérica) que pretende utilizar para a comparação estatística, e a principal dúvida, por favor solicite a informação. 8) É aceitável o usuário não saber ainda o tamanho da amostra. Contudo, as outras informações são essenciais."
 
     st.sidebar.markdown(
-        """
-        <style>
-        .footer {
-            font-size: 9px;
-            text-align: center;
-        }
-        </style>
-        <div class="footer">Projeto piloto desenvolvido pela Universidade Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br><br><br><br><br><br><br><br><br><br></div>
-        """,
-        unsafe_allow_html=True
+    """
+    <style>
+    .footer {
+        font-size: 9px;
+        text-align: center;
+    }
+    </style>
+    <div class="footer">Projeto piloto desenvolvido pela Universidade Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
+    Desenvolvido por: Amanda Cristina Agador e Cristiano Miranda de Araujo<br>
+    Contato: cristiano.araujo@utp.br<br>
+    Projeto apoiado pela Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
+    """,
+    unsafe_allow_html=True
     )
+
 
 else:
     st.image(logo_url_e, use_column_width=True)
@@ -117,17 +124,21 @@ else:
     "Limite la respuesta a un máximo de 3800 tokens de salida.")
 
     st.sidebar.markdown(
-        """
-        <style>
-        .footer {
-            font-size: 9px;
-            text-align: center;
-        }
-        </style>
-        <div class="footer">Proyecto piloto desarrollado por la Universidad Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br><br><br><br><br><br><br><br><br><br></div>
-        """,
-        unsafe_allow_html=True
+    """
+    <style>
+    .footer {
+        font-size: 9px;
+        text-align: center;
+    }
+    </style>
+    <div class="footer">Proyecto piloto desarrollado por la Universidad Tuiuti do Paraná (PPGSCH/PPGO-UTP)<br>
+    Desarrollado por: Amanda Cristina Agador y Cristiano Miranda de Araujo<br>
+    Contacto: cristiano.araujo@utp.br<br>
+    Proyecto apoyado por la Coordinación de Perfeccionamiento del Personal de Nivel Superior (CAPES)<br><br><br><br><br><br><br><br><br><br></div>
+    """,
+    unsafe_allow_html=True
     )
+
 
 # Criação da função para renderizar a conversa com barra de rolagem
 def render_chat(hst_conversa):
