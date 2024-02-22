@@ -26,7 +26,7 @@ if idioma == "English":
     st.image(logo_url, use_column_width=True)
     abertura = st.write("Hello there! I'm an AI-powered chatbot here to assist you with Biostatistics. To kick off our conversation, please enter any biostatistics-related information in the sidebar or the field below.")
     st.sidebar.title("Tell me")
-    text_input_center = st.chat_input("Chat with me by typing in the field below")
+    text_input_center = st.chat_input("Chat with me")
     condicoes = ("Answer only questions related to biostatistics and statistical tests applied in health studies."
     "Ensure all questions fall within the chatbot's scope and provide guidance otherwise."
     "Ensure responses are pertinent to the user's question context and offer relevant information about statistical tests in health."
